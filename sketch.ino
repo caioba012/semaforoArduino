@@ -1,20 +1,20 @@
 void setup() {
 //definição das portas de entrada dos leds
-  pinMode(2, OUTPUT);
-  pinMode(4, OUTPUT);  
-  pinMode(6, OUTPUT);  
+  pinMode(3, OUTPUT); //verde
+  pinMode(5, OUTPUT); //amarelo
+  pinMode(7, OUTPUT); //vermelho
 }
 
 void loop() { 
-      digitalWrite(6, HIGH); //pare      
+      digitalWrite(7, HIGH); //pare      
       delay(4000);
-      digitalWrite(6, LOW);      
+      digitalWrite(7, LOW);      
 
-      digitalWrite(2, HIGH); //siga      
+      digitalWrite(3, HIGH); //siga      
       delay(4000);
-      digitalWrite(2, LOW);     
+      digitalWrite(3, LOW);     
 
-      digitalWrite(4, HIGH); //atenção
+      digitalWrite(5, HIGH); //atenção
       delay(1500);
-      digitalWrite(4, LOW);      
+      digitalWrite(5, LOW);      
 }
